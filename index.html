@@ -13,6 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
@@ -20,12 +21,24 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <div class="noise"></div>
   <div class="cursor-glow"></div>
 
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
   <header class="nav">
-    <a class="brand" href="#home"><span class="brand-name">S KARTHIKEYAN</span><span class="brand-short">SK.</span><small>FINANCIAL CRIMES • ANALYTICS • AI</small></a>
+
+    <a class="brand" href="#home">
+      <span class="brand-name">S KARTHIKEYAN</span>
+      <span class="brand-short">SK.</span>
+      <small>FINANCIAL CRIMES • ANALYTICS • AI</small>
+    </a>
+
     <nav>
       <a href="#about">About</a>
       <a href="#work">Work</a>
@@ -33,535 +46,1226 @@
       <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button>
+
+    <button
+      id="themeToggle"
+      class="icon-btn"
+      aria-label="Toggle theme"
+    >
+      ◐
+    </button>
+
   </header>
 
+
   <main id="home">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero section">
+
       <div class="hero-grid"></div>
 
-      <div class="hero-copy reveal">
-        <p class="eyebrow">S KARTHIKEYAN <span>•</span> FINANCIAL CRIMES <span>•</span> ANALYTICS <span>•</span> AI</p>
+      <!-- HERO TEXT -->
 
-        <h1>Building with <em>data.</em><br>Solving with <em>AI.</em><br><span class="hero-last">Grounded in experience.</span></h1>
+      <div class="hero-copy reveal">
+
+        <p class="eyebrow">
+          S KARTHIKEYAN
+          <span>•</span>
+          FINANCIAL CRIMES
+          <span>•</span>
+          ANALYTICS
+          <span>•</span>
+          AI
+        </p>
+
+        <h1>
+          Building with <em>data.</em><br>
+          Solving with <em>AI.</em><br>
+          <span class="hero-last">Grounded in experience.</span>
+        </h1>
 
         <p class="hero-text">
-          A financial crimes and compliance professional combining 8+ years of operational experience with business analytics, data skills and a growing
-  focus on AI and automation.
+          A financial crimes and compliance professional combining 8+ years
+          of operational experience with business analytics, data skills
+          and a growing focus on AI and automation.
         </p>
+
+
+        <!-- HERO BUTTONS -->
 
         <div class="hero-actions">
-          <a class="btn primary" href="#work">Explore my work <span>↗</span></a>
-          <a class="btn ghost" href="#about">My story <span>↓</span></a>
+
+          <a class="btn primary" href="#work">
+            Explore my work
+            <span>↗</span>
+          </a>
+
+          <a class="btn ghost" href="#about">
+            My story
+            <span>↓</span>
+          </a>
+
         </div>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="hero-socials">
+
+          <a
+            href="https://www.linkedin.com/in/karthikeyan1994/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            LINKEDIN
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://github.com/skarthikeyan-94"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            GITHUB
+            <span>↗</span>
+          </a>
+
+        </div>
+
+
+        <!-- PROOF STRIP -->
 
         <div class="proof-strip">
-          <div><strong>8+</strong><span>YEARS EXPERIENCE</span></div>
-          <div><strong>MBA</strong><span>BUSINESS ANALYTICS</span></div>
-          <div><strong>98–100%</strong><span>QUALITY TRACK RECORD</span></div>
+
+          <div>
+            <strong>8+</strong>
+            <span>YEARS EXPERIENCE</span>
+          </div>
+
+          <div>
+            <strong>MBA</strong>
+            <span>BUSINESS ANALYTICS</span>
+          </div>
+
+          <div>
+            <strong>98–100%</strong>
+            <span>QUALITY TRACK RECORD</span>
+          </div>
+
         </div>
+
+
         <div class="hero-meta">
+
           <span>BASED IN BENGALURU</span>
-          <span>OPEN TO ANALYTICS & AI OPPORTUNITIES</span>
+
+          <span>
+            OPEN TO ANALYTICS & AI OPPORTUNITIES
+          </span>
+
         </div>
+
       </div>
 
-      <div class="hero-orbit reveal delay" id="orbit">
-        <div class="orbit orbit-outer"></div>
-        <div class="orbit orbit-mid"></div>
-        <div class="orbit orbit-inner"></div>
-        <button class="node node-data active" data-panel="data">DATA</button>
-        <button class="node node-risk" data-panel="risk">FCC</button>
-        <button class="node node-ai" data-panel="ai">AI</button>
 
-        <div class="core">
-          <span class="core-title">FOCUS</span>
-                </div>
+      <!-- =========================
+           HERO PROFILE + ORBIT
+      ========================== -->
 
-        <div class="orbit-panel" id="orbitPanel">
-          <div class="panel-kicker">DATA</div>
-          <strong>Analytics</strong>
-          <span>SQL · Python · Power BI</span>
+      <div class="hero-visual reveal delay">
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="hero-profile">
+
+          <div class="profile-ring">
+
+            <img
+              src="assets/karthikeyan-profile.png"
+              alt="S Karthikeyan"
+            />
+
+          </div>
+
+
+          <!-- INTRO VIDEO BUTTON -->
+
+          <a
+            class="intro-video"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Play introduction video"
+          >
+
+            <span class="intro-play">
+              ▶
+            </span>
+
+            <span>
+              PLAY INTRO
+            </span>
+
+            <span class="intro-arrow">
+              ↗
+            </span>
+
+          </a>
+
         </div>
+
+
+        <!-- EXISTING ORBIT -->
+        <div class="hero-orbit" id="orbit">
+
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-mid"></div>
+          <div class="orbit orbit-inner"></div>
+
+          <button
+            class="node node-data active"
+            data-panel="data"
+          >
+            DATA
+          </button>
+
+          <button
+            class="node node-risk"
+            data-panel="risk"
+          >
+            FCC
+          </button>
+
+          <button
+            class="node node-ai"
+            data-panel="ai"
+          >
+            AI
+          </button>
+
+
+          <div class="core">
+
+            <span class="core-title">
+              FOCUS
+            </span>
+
+          </div>
+
+
+          <div class="orbit-panel" id="orbitPanel">
+
+            <div class="panel-kicker">
+              DATA
+            </div>
+
+            <strong>
+              Analytics
+            </strong>
+
+            <span>
+              SQL · Python · Power BI
+            </span>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="scroll-cue">SCROLL <span>↓</span></div>
+
+      <div class="scroll-cue">
+        SCROLL
+        <span>↓</span>
+      </div>
+
     </section>
+
+
+    <!-- =========================
+         STATS
+    ========================== -->
 
     <section class="stats section">
-      <div class="stat reveal"><strong data-count="8">0</strong><span>+ years professional experience</span></div>
-      <div class="stat reveal"><strong data-count="3">0</strong><span>+ years financial crime exposure</span></div>
-      <div class="stat reveal"><strong data-count="60">0</strong><span>+ QC reviews handled daily</span></div>
-      <div class="stat reveal"><strong>98–100%</strong><span>quality across review activities</span></div>
+
+      <div class="stat reveal">
+        <strong data-count="8">0</strong>
+        <span>+ years professional experience</span>
+      </div>
+
+      <div class="stat reveal">
+        <strong data-count="3">0</strong>
+        <span>+ years financial crime exposure</span>
+      </div>
+
+      <div class="stat reveal">
+        <strong data-count="60">0</strong>
+        <span>+ QC reviews handled daily</span>
+      </div>
+
+      <div class="stat reveal">
+        <strong>98–100%</strong>
+        <span>quality across review activities</span>
+      </div>
+
     </section>
 
-<section class="section value-section">
-  <div class="section-label">01 / WHAT I BRING</div>
 
-  <div class="value-head">
-    <div>
-      <p class="kicker">Three connected strengths</p>
-      <h2>Domain experience.<br><em>Analytical direction.</em></h2>
-    </div>
+    <!-- =========================
+         WHAT I BRING
+    ========================== -->
 
-    <p class="value-intro">
-      I combine financial crimes and compliance experience with business
-      analytics and emerging AI capabilities — connecting real-world
-      risk knowledge with data-driven problem solving.
-    </p>
-  </div>
+    <section class="section value-section">
 
-     <div class="value-grid">
-
-  <article class="value-card reveal">
-    <span class="card-number">01</span>
-    <div class="value-symbol">◫</div>
-
-    <h3>Financial Crimes & Compliance</h3>
-
-    <p>
-      8+ years of professional experience with financial crimes,
-      due diligence, remediation, screening, risk review and
-      quality control across operational processes.
-    </p>
-
-    <div class="card-line"></div>
-    <span class="card-note">DOMAIN</span>
-  </article>
-
-
-  <article class="value-card reveal">
-    <span class="card-number">02</span>
-    <div class="value-symbol">⌁</div>
-
-    <h3>Data & Analytics</h3>
-
-    <p>
-      Building analytical capability through an MBA in Business Analytics
-      and practical work with Excel, SQL, Power BI, Python and
-      data-driven problem solving.
-    </p>
-
-    <div class="card-line"></div>
-    <span class="card-note">DIRECTION</span>
-  </article>
-
-
-  <article class="value-card reveal">
-    <span class="card-number">03</span>
-    <div class="value-symbol">✦</div>
-
-    <h3>AI & Automation</h3>
-
-    <p>
-      Developing practical AI capability across generative AI,
-      prompt engineering and workflow automation, with a focus
-      on applying technology to real business problems.
-    </p>
-
-    <div class="card-line"></div>
-    <span class="card-note">NEXT</span>
-  </article>
-
-</div>
-</section>
-
-    <section id="about" class="section about-story">
-  <div class="section-label">02 / ABOUT</div>
-
- <div class="about-hero">
-  <div>
-    <p class="kicker">A broader career story</p>
-    <h2>From operations<br><em>to financial crimes, analytics and AI.</em></h2>
-  </div>
-
-  <p class="about-lead">
-    My career has evolved through different layers of business and risk —
-    from operations and customer-facing work to financial crimes,
-    due diligence and quality control. I’m now combining that experience
-    with an MBA in Business Analytics to move deeper into data, analytics,
-    AI and automation.
-  </p>
-</div>
-
-<div class="career-path">
-  <div class="path-line"></div>
-
-  <article class="path-item reveal">
-    <span class="path-index">01</span>
-    <div class="path-year">2013 — 2017</div>
-    <h3>Mechanical Engineering</h3>
-    <p>
-      Built a technical foundation in structured thinking, problem solving,
-      engineering discipline and analytical approach.
-    </p>
-  </article>
-
-  <article class="path-item reveal">
-    <span class="path-index">02</span>
-    <div class="path-year">2017 — 2021</div>
-    <h3>Operations & Technology</h3>
-    <p>
-      Built professional experience across sales operations, CRM data accuracy,
-      technical support, troubleshooting and customer problem resolution,
-      developing a strong understanding of processes, systems and people.
-    </p>
-  </article>
-
-  <article class="path-item reveal">
-    <span class="path-index">03</span>
-    <div class="path-year">2021 — PRESENT</div>
-    <h3>Financial Services → Financial Crime</h3>
-    <p>
-      Progressed from financial-services operations at PayPal into Financial
-      Crimes and Compliance at Wells Fargo, building experience across due
-      diligence, CIP remediation, sanctions and PEP screening, transaction
-      monitoring, HRCM, quality control and risk review.
-    </p>
-  </article>
-
-  <article class="path-item reveal">
-    <span class="path-index">04</span>
-    <div class="path-year">2025 — 2027</div>
-    <h3>MBA — Business Analytics</h3>
-    <p>
-      Formalising the analytical side of my career through an MBA in Business
-      Analytics while building practical capability across Excel, Power BI,
-      SQL, Python, data analysis and visualization.
-    </p>
-  </article>
-
-  <article class="path-item path-next reveal">
-    <span class="path-index">05</span>
-    <div class="path-year">NEXT</div>
-    <h3>FCC • Risk • Analytics • AI</h3>
-    <p>
-      Building toward opportunities across Financial Crimes, AML/KYC,
-      Risk & Compliance, Financial Crime Analytics and data-driven roles,
-      while applying automation and practical AI to solve business problems.
-    </p>
-  </article>
-</div>
-      <div class="about-bottom">
-        <div class="about-statement">
-          <span class="quote-mark">“</span>
-          <p>I’m not trying to erase my previous experience. I’m using it as an advantage while moving toward work where data, technology and business decisions meet.</p>
-        </div>
-        <div class="about-targets">
-          <span>BUILDING TOWARD</span>
-          <strong>Data Analytics</strong>
-          <strong>Business Analytics</strong>
-          <strong>Risk Analytics</strong>
-          <strong>Entry-level AI</strong>
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section work-section">
-  <div class="section-head">
-    <div>
-      <div class="section-label">03 / SELECTED WORK</div>
-      <h2>Experience that shows <em>how I solve problems.</em></h2>
-    </div>
-    <span class="status">● FINANCIAL CRIME · RISK · ANALYTICS</span>
-  </div>
-
-  <div class="work-grid">
-
-    <article class="work-card work-featured reveal">
-      <div class="work-top">
-        <span>01</span>
-        <span>2023 — PRESENT</span>
+      <div class="section-label">
+        01 / WHAT I BRING
       </div>
 
-      <div class="work-main">
+      <div class="value-head">
+
         <div>
-          <div class="work-label">FINANCIAL CRIME · DUE DILIGENCE · RISK CONTROLS</div>
-          <h3>Due Diligence Associate</h3>
-          <h4>Wells Fargo</h4>
-        </div>
 
-        <p>
-          Hands-on experience across client due diligence and financial-crime
-          operations, including CIP remediation, sanctions and PEP screening,
-          transaction monitoring, HRCM and quality control. Focused on data
-          accuracy, risk identification, investigation quality and control
-          effectiveness.
-        </p>
-      </div>
-
-      <div class="impact-row">
-        <div>
-          <strong>60+</strong>
-          <span>QC REVIEWS / DAY</span>
-        </div>
-        <div>
-          <strong>98–100%</strong>
-          <span>QUALITY TRACK RECORD</span>
-        </div>
-        <div>
-          <strong>RISK</strong>
-          <span>CONTROL FOCUS</span>
-        </div>
-      </div>
-
-      <div class="tags">
-        <span>Due Diligence</span>
-        <span>CIP Remediation</span>
-        <span>Sanctions & PEP</span>
-        <span>Transaction Monitoring</span>
-        <span>Quality Control</span>
-        <span>Data Validation</span>
-      </div>
-    </article>
-
-
-    <article class="work-card reveal">
-      <div class="work-top">
-        <span>02</span>
-        <span>2021 — 2023</span>
-      </div>
-
-      <div class="work-label">FINANCIAL SERVICES · INVESTIGATION · OPERATIONS</div>
-
-      <h3>Senior Customer Solutions Advisor</h3>
-      <h4>PayPal</h4>
-
-      <p>
-        Investigated high-volume disputes and chargebacks, analysed recurring
-        patterns, identified root causes and supported process improvements.
-        Developed experience in case-based investigation, decision making,
-        documentation and risk-sensitive customer operations.
-      </p>
-
-      <div class="impact-row compact">
-        <div>
-          <strong>40–60</strong>
-          <span>CASES / DAY</span>
-        </div>
-        <div>
-          <strong>98%</strong>
-          <span>RESOLUTION ACCURACY</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>AUDIT COMPLIANCE</span>
-        </div>
-      </div>
-
-      <div class="tags">
-        <span>Case Analysis</span>
-        <span>Investigation</span>
-        <span>Root Cause Analysis</span>
-        <span>Process Improvement</span>
-      </div>
-    </article>
-
-
-    <article class="work-card reveal">
-      <div class="work-top">
-        <span>03</span>
-        <span>2017 — 2021</span>
-      </div>
-
-      <div class="work-label">OPERATIONS · TECHNOLOGY · DATA ACCURACY</div>
-
-      <h3>Technical Support & Customer Operations</h3>
-      <h4>Concentrix · Foundever</h4>
-
-      <p>
-        Built the operational foundation through technical troubleshooting,
-        CRM data management, sales operations and customer support. Worked
-        across structured processes, data accuracy, issue resolution and
-        cross-functional coordination.
-      </p>
-
-      <div class="impact-row compact">
-        <div>
-          <strong>30+</strong>
-          <span>SUPPORT CASES / DAY</span>
-        </div>
-        <div>
-          <strong>95%</strong>
-          <span>CUSTOMER SATISFACTION</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>CRM DATA ACCURACY</span>
-        </div>
-      </div>
-
-      <div class="tags">
-        <span>Problem Solving</span>
-        <span>CRM Data</span>
-        <span>Process Support</span>
-        <span>Technical Operations</span>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-      
-<section id="projects" class="section project-section">
-
-  <div class="section-label">04 / PROJECT LAB</div>
-
-  <div class="project-launch">
-    <div>
-      <h3>Turning experience into <em>demonstrable projects.</em></h3>
-
-      <p>
-        Building practical projects across SQL, Python, Power BI,
-        financial crime analytics and AI automation — using real
-        business problems to demonstrate analytical capability.
-      </p>
-    </div>
-
-    <span class="project-count">BUILDING → NEXT</span>
-  </div>
-
-</section>
-
-
-<section id="skills" class="section">
-
-  <div class="section-label">05 / CAPABILITIES</div>
-
-  <div class="skills-layout">
-    <div>
-      <h2>Three directions.<br><em>One analytical profile.</em></h2>
-      <p class="muted">
-        Combining financial crime domain experience with analytics,
-        risk and emerging AI capabilities to solve business problems.
-      </p>
-    </div>
-
-    <div class="skill-stack">
-
-      <button class="skill-row active">
-        <span>01</span>
-        <strong>FINANCIAL CRIME & RISK</strong>
-        <small>
-          AML · KYC · CDD · CIP Remediation · Sanctions · PEP ·
-          Transaction Monitoring · HRCM · QC · Risk Review
-        </small>
-      </button>
-
-      <button class="skill-row">
-        <span>02</span>
-        <strong>DATA & BUSINESS ANALYTICS</strong>
-        <small>
-          SQL · Excel · Power BI · Python · Data Analysis ·
-          Visualization · MIS Reporting
-        </small>
-      </button>
-
-            <button class="skill-row">
-        <span>03</span>
-        <strong>AI & AUTOMATION</strong>
-        <small>
-          Generative AI · Prompt Engineering · AI Applications ·
-          Workflow Automation · AI-Assisted Analysis
-        </small>
-      </button>
-
-    </div> <!-- closes skill-stack -->
-
-  </div> <!-- closes skills-layout -->
-
-</section> <!-- closes skills -->
-
-
-<section id="credentials" class="section credentials">
-  <div class="section-head">
-    <div>
-      <div class="section-label">06 / CREDENTIALS</div>
-      <h2>Education, credentials<br><em>and continuous learning.</em></h2>
-    </div>
-    <span class="status">● BUILDING IN PUBLIC</span>
-  </div>
-
-  <div class="credentials-layout">
-
-    <!-- EDUCATION -->
-    <div class="credential-group">
-      <div class="credential-heading">
-        <span>01</span>
-        <h3>EDUCATION</h3>
-      </div>
-
-      <article class="edu-card">
-        <div>
-          <span class="edu-year">2025 — 2027</span>
-          <h2>M.B.A. — Business Analytics</h2>
-          <p>Amrita Vishwa Vidyapeetham · Online · In collaboration with Grant Thornton</p>
-        </div>
-
-        <div class="edu-mark">
-          MBA
-          <small>ANALYTICS</small>
-        </div>
-      </article>
-
-      <article class="edu-card">
-        <div>
-          <span class="edu-year">2013 — 2017</span>
-          <h2>B.E. — Mechanical Engineering</h2>
-          <p>Nandha College of Technology · Erode</p>
-        </div>
-
-        <div class="edu-mark">
-          BE
-          <small>MECHANICAL</small>
-        </div>
-      </article>
-    </div>
-
-
-    <!-- CERTIFICATIONS -->
-    <div class="credential-group">
-      <div class="credential-heading">
-        <span>02</span>
-        <h3>CERTIFICATIONS & BADGES</h3>
-      </div>
-
-      <div class="credential-shell">
-        <div class="credential-placeholder">
-          <div class="badge-orb">✦</div>
-
-          <h3>Certification & Digital Badges</h3>
-
-          <p>
-            Professional certifications, digital badges and completed learning programs will be added here as they are completed and verified.
+          <p class="kicker">
+            Three connected strengths
           </p>
 
-          <div class="credential-filters">
-            <span class="selected">ALL</span>
-            <span>DATA</span>
-            <span>AI</span>
-            <span>BUSINESS</span>
-            <span>RISK & COMPLIANCE</span>
+          <h2>
+            Domain experience.<br>
+            <em>Analytical direction.</em>
+          </h2>
+
+        </div>
+
+        <p class="value-intro">
+          I combine financial crimes and compliance experience with business
+          analytics and emerging AI capabilities — connecting real-world
+          risk knowledge with data-driven problem solving.
+        </p>
+
+      </div>
+
+
+      <div class="value-grid">
+
+
+        <article class="value-card reveal">
+
+          <span class="card-number">
+            01
+          </span>
+
+          <div class="value-symbol">
+            ◫
+          </div>
+
+          <h3>
+            Financial Crimes & Compliance
+          </h3>
+
+          <p>
+            8+ years of professional experience with financial crimes,
+            due diligence, remediation, screening, risk review and
+            quality control across operational processes.
+          </p>
+
+          <div class="card-line"></div>
+
+          <span class="card-note">
+            DOMAIN
+          </span>
+
+        </article>
+
+
+        <article class="value-card reveal">
+
+          <span class="card-number">
+            02
+          </span>
+
+          <div class="value-symbol">
+            ⌁
+          </div>
+
+          <h3>
+            Data & Analytics
+          </h3>
+
+          <p>
+            Building analytical capability through an MBA in Business Analytics
+            and practical work with Excel, SQL, Power BI, Python and
+            data-driven problem solving.
+          </p>
+
+          <div class="card-line"></div>
+
+          <span class="card-note">
+            DIRECTION
+          </span>
+
+        </article>
+
+
+        <article class="value-card reveal">
+
+          <span class="card-number">
+            03
+          </span>
+
+          <div class="value-symbol">
+            ✦
+          </div>
+
+          <h3>
+            AI & Automation
+          </h3>
+
+          <p>
+            Developing practical AI capability across generative AI,
+            prompt engineering and workflow automation, with a focus
+            on applying technology to real business problems.
+          </p>
+
+          <div class="card-line"></div>
+
+          <span class="card-note">
+            NEXT
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about" class="section about-story">
+
+      <div class="section-label">
+        02 / ABOUT
+      </div>
+
+
+      <div class="about-hero">
+
+        <div>
+
+          <p class="kicker">
+            A broader career story
+          </p>
+
+          <h2>
+            From operations<br>
+            <em>to financial crimes, analytics and AI.</em>
+          </h2>
+
+        </div>
+
+
+        <p class="about-lead">
+          My career has evolved through different layers of business and risk —
+          from operations and customer-facing work to financial crimes,
+          due diligence and quality control. I’m now combining that experience
+          with an MBA in Business Analytics to move deeper into data, analytics,
+          AI and automation.
+        </p>
+
+      </div>
+
+
+      <div class="career-path">
+
+        <div class="path-line"></div>
+
+
+        <article class="path-item reveal">
+
+          <span class="path-index">
+            01
+          </span>
+
+          <div class="path-year">
+            2013 — 2017
+          </div>
+
+          <h3>
+            Mechanical Engineering
+          </h3>
+
+          <p>
+            Built a technical foundation in structured thinking, problem solving,
+            engineering discipline and analytical approach.
+          </p>
+
+        </article>
+
+
+        <article class="path-item reveal">
+
+          <span class="path-index">
+            02
+          </span>
+
+          <div class="path-year">
+            2017 — 2021
+          </div>
+
+          <h3>
+            Operations & Technology
+          </h3>
+
+          <p>
+            Built professional experience across sales operations, CRM data accuracy,
+            technical support, troubleshooting and customer problem resolution,
+            developing a strong understanding of processes, systems and people.
+          </p>
+
+        </article>
+
+
+        <article class="path-item reveal">
+
+          <span class="path-index">
+            03
+          </span>
+
+          <div class="path-year">
+            2021 — PRESENT
+          </div>
+
+          <h3>
+            Financial Services → Financial Crime
+          </h3>
+
+          <p>
+            Progressed from financial-services operations at PayPal into Financial
+            Crimes and Compliance at Wells Fargo, building experience across due
+            diligence, CIP remediation, sanctions and PEP screening, transaction
+            monitoring, HRCM, quality control and risk review.
+          </p>
+
+        </article>
+
+
+        <article class="path-item reveal">
+
+          <span class="path-index">
+            04
+          </span>
+
+          <div class="path-year">
+            2025 — 2027
+          </div>
+
+          <h3>
+            MBA — Business Analytics
+          </h3>
+
+          <p>
+            Formalising the analytical side of my career through an MBA in Business
+            Analytics while building practical capability across Excel, Power BI,
+            SQL, Python, data analysis and visualization.
+          </p>
+
+        </article>
+
+
+        <article class="path-item path-next reveal">
+
+          <span class="path-index">
+            05
+          </span>
+
+          <div class="path-year">
+            NEXT
+          </div>
+
+          <h3>
+            FCC • Risk • Analytics • AI
+          </h3>
+
+          <p>
+            Building toward opportunities across Financial Crimes, AML/KYC,
+            Risk & Compliance, Financial Crime Analytics and data-driven roles,
+            while applying automation and practical AI to solve business problems.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="about-bottom">
+
+        <div class="about-statement">
+
+          <span class="quote-mark">
+            “
+          </span>
+
+          <p>
+            I’m not trying to erase my previous experience. I’m using it as an
+            advantage while moving toward work where data, technology and
+            business decisions meet.
+          </p>
+
+        </div>
+
+
+        <div class="about-targets">
+
+          <span>
+            BUILDING TOWARD
+          </span>
+
+          <strong>
+            Data Analytics
+          </strong>
+
+          <strong>
+            Business Analytics
+          </strong>
+
+          <strong>
+            Risk Analytics
+          </strong>
+
+          <strong>
+            Entry-level AI
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SELECTED WORK
+    ========================== -->
+
+    <section id="work" class="section work-section">
+
+      <div class="section-head">
+
+        <div>
+
+          <div class="section-label">
+            03 / SELECTED WORK
+          </div>
+
+          <h2>
+            Experience that shows
+            <em>how I solve problems.</em>
+          </h2>
+
+        </div>
+
+        <span class="status">
+          ● FINANCIAL CRIME · RISK · ANALYTICS
+        </span>
+
+      </div>
+
+
+      <div class="work-grid">
+
+
+        <article class="work-card work-featured reveal">
+
+          <div class="work-top">
+
+            <span>
+              01
+            </span>
+
+            <span>
+              2023 — PRESENT
+            </span>
+
+          </div>
+
+
+          <div class="work-main">
+
+            <div>
+
+              <div class="work-label">
+                FINANCIAL CRIME · DUE DILIGENCE · RISK CONTROLS
+              </div>
+
+              <h3>
+                Due Diligence Associate
+              </h3>
+
+              <h4>
+                Wells Fargo
+              </h4>
+
+            </div>
+
+
+            <p>
+              Hands-on experience across client due diligence and financial-crime
+              operations, including CIP remediation, sanctions and PEP screening,
+              transaction monitoring, HRCM and quality control. Focused on data
+              accuracy, risk identification, investigation quality and control
+              effectiveness.
+            </p>
+
+          </div>
+
+
+          <div class="impact-row">
+
+            <div>
+
+              <strong>
+                60+
+              </strong>
+
+              <span>
+                QC REVIEWS / DAY
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                98–100%
+              </strong>
+
+              <span>
+                QUALITY TRACK RECORD
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                RISK
+              </strong>
+
+              <span>
+                CONTROL FOCUS
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="tags">
+
+            <span>Due Diligence</span>
+            <span>CIP Remediation</span>
+            <span>Sanctions & PEP</span>
+            <span>Transaction Monitoring</span>
+            <span>Quality Control</span>
+            <span>Data Validation</span>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card reveal">
+
+          <div class="work-top">
+
+            <span>
+              02
+            </span>
+
+            <span>
+              2021 — 2023
+            </span>
+
+          </div>
+
+
+          <div class="work-label">
+            FINANCIAL SERVICES · INVESTIGATION · OPERATIONS
+          </div>
+
+          <h3>
+            Senior Customer Solutions Advisor
+          </h3>
+
+          <h4>
+            PayPal
+          </h4>
+
+
+          <p>
+            Investigated high-volume disputes and chargebacks, analysed recurring
+            patterns, identified root causes and supported process improvements.
+            Developed experience in case-based investigation, decision making,
+            documentation and risk-sensitive customer operations.
+          </p>
+
+
+          <div class="impact-row compact">
+
+            <div>
+
+              <strong>
+                40–60
+              </strong>
+
+              <span>
+                CASES / DAY
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                98%
+              </strong>
+
+              <span>
+                RESOLUTION ACCURACY
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                100%
+              </strong>
+
+              <span>
+                AUDIT COMPLIANCE
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="tags">
+
+            <span>Case Analysis</span>
+            <span>Investigation</span>
+            <span>Root Cause Analysis</span>
+            <span>Process Improvement</span>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card reveal">
+
+          <div class="work-top">
+
+            <span>
+              03
+            </span>
+
+            <span>
+              2017 — 2021
+            </span>
+
+          </div>
+
+
+          <div class="work-label">
+            OPERATIONS · TECHNOLOGY · DATA ACCURACY
+          </div>
+
+          <h3>
+            Technical Support & Customer Operations
+          </h3>
+
+          <h4>
+            Concentrix · Foundever
+          </h4>
+
+
+          <p>
+            Built the operational foundation through technical troubleshooting,
+            CRM data management, sales operations and customer support. Worked
+            across structured processes, data accuracy, issue resolution and
+            cross-functional coordination.
+          </p>
+
+
+          <div class="impact-row compact">
+
+            <div>
+
+              <strong>
+                30+
+              </strong>
+
+              <span>
+                SUPPORT CASES / DAY
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                95%
+              </strong>
+
+              <span>
+                CUSTOMER SATISFACTION
+              </span>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                100%
+              </strong>
+
+              <span>
+                CRM DATA ACCURACY
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="tags">
+
+            <span>Problem Solving</span>
+            <span>CRM Data</span>
+            <span>Process Support</span>
+            <span>Technical Operations</span>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT LAB
+    ========================== -->
+
+    <section id="projects" class="section project-section">
+
+      <div class="section-label">
+        04 / PROJECT LAB
+      </div>
+
+
+      <div class="project-launch">
+
+        <div>
+
+          <h3>
+            Turning experience into
+            <em>demonstrable projects.</em>
+          </h3>
+
+          <p>
+            Building practical projects across SQL, Python, Power BI,
+            financial crime analytics and AI automation — using real
+            business problems to demonstrate analytical capability.
+          </p>
+
+        </div>
+
+
+        <span class="project-count">
+          BUILDING → NEXT
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CAPABILITIES
+    ========================== -->
+
+    <section id="skills" class="section">
+
+      <div class="section-label">
+        05 / CAPABILITIES
+      </div>
+
+
+      <div class="skills-layout">
+
+        <div>
+
+          <h2>
+            Three directions.<br>
+            <em>One analytical profile.</em>
+          </h2>
+
+          <p class="muted">
+            Combining financial crime domain experience with analytics,
+            risk and emerging AI capabilities to solve business problems.
+          </p>
+
+        </div>
+
+
+        <div class="skill-stack">
+
+
+          <button class="skill-row active">
+
+            <span>
+              01
+            </span>
+
+            <strong>
+              FINANCIAL CRIME & RISK
+            </strong>
+
+            <small>
+              AML · KYC · CDD · CIP Remediation · Sanctions · PEP ·
+              Transaction Monitoring · HRCM · QC · Risk Review
+            </small>
+
+          </button>
+
+
+          <button class="skill-row">
+
+            <span>
+              02
+            </span>
+
+            <strong>
+              DATA & BUSINESS ANALYTICS
+            </strong>
+
+            <small>
+              SQL · Excel · Power BI · Python · Data Analysis ·
+              Visualization · MIS Reporting
+            </small>
+
+          </button>
+
+
+          <button class="skill-row">
+
+            <span>
+              03
+            </span>
+
+            <strong>
+              AI & AUTOMATION
+            </strong>
+
+            <small>
+              Generative AI · Prompt Engineering · AI Applications ·
+              Workflow Automation · AI-Assisted Analysis
+            </small>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CREDENTIALS
+    ========================== -->
+
+    <section id="credentials" class="section credentials">
+
+      <div class="section-head">
+        <div>
+          <div class="section-label">06 / CREDENTIALS</div>
+          <h2>Education, credentials<br><em>and continuous learning.</em></h2>
+        </div>
+        <span class="status">● BUILDING IN PUBLIC</span>
+      </div>
+
+      <div class="credentials-layout">
+
+        <div class="credential-group">
+          <div class="credential-heading">
+            <span>01</span>
+            <h3>EDUCATION</h3>
+          </div>
+
+          <article class="edu-card">
+            <div>
+              <span class="edu-year">2025 — 2027</span>
+              <h2>M.B.A. — Business Analytics</h2>
+              <p>Amrita Vishwa Vidyapeetham · Online · In collaboration with Grant Thornton</p>
+            </div>
+            <div class="edu-mark">MBA<small>ANALYTICS</small></div>
+          </article>
+
+          <article class="edu-card">
+            <div>
+              <span class="edu-year">2013 — 2017</span>
+              <h2>B.E. — Mechanical Engineering</h2>
+              <p>Nandha College of Technology · Erode</p>
+            </div>
+            <div class="edu-mark">BE<small>MECHANICAL</small></div>
+          </article>
+        </div>
+
+        <div class="credential-group">
+          <div class="credential-heading">
+            <span>02</span>
+            <h3>CERTIFICATIONS &amp; BADGES</h3>
+          </div>
+
+          <div class="credential-shell">
+            <article class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-type">AI · COMPLETED</span>
+                <span class="credential-number">01</span>
+              </div>
+
+              <a class="credential-image" href="https://academy.claude.com/verify/23b1cc939df15633e97c0d3d30491ac9" target="_blank" rel="noopener noreferrer" aria-label="Verify Claude 101 credential">
+                <img src="assets/claude-101-badge.png" alt="Claude 101 credential badge" />
+                <span class="credential-image-overlay">VIEW / VERIFY ↗</span>
+              </a>
+
+              <div class="credential-card-footer">
+                <div>
+                  <strong>Claude 101</strong>
+                  <span>AI CREDENTIAL · 2026</span>
+                </div>
+                <a href="https://academy.claude.com/verify/23b1cc939df15633e97c0d3d30491ac9" target="_blank" rel="noopener noreferrer">VERIFY ↗</a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </div>
 
-  </div>
-</section>
-    <section id="contact" class="section contact">
-      <div class="section-label">07 / CONTACT</div>
-      <div class="contact-wrap">
-        <h2>Let's build something<br><em>worth showing.</em></h2>
-        <p>Open to opportunities in business analytics, financial crime analytics, risk, data-driven operations and AI-enabled workflows.</p>
-        <a class="email-link" href="mailto:karthikeyansk94@outlook.com">karthikeyansk94@outlook.com↗</a>
-        <a class="phone-link" href="tel:+918668062189">+91 86680 62189</a>
-        <a class="phone-link" href="tel:+919489324859">+91 94893 24859</a>
       </div>
     </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="section contact">
+
+      <div class="section-label">
+        07 / CONTACT
+      </div>
+
+
+      <div class="contact-wrap">
+
+        <h2>
+          Let's build something<br>
+          <em>worth showing.</em>
+        </h2>
+
+        <p>
+          Open to opportunities in business analytics, financial crime analytics,
+          risk, data-driven operations and AI-enabled workflows.
+        </p>
+
+
+        <a
+          class="email-link"
+          href="mailto:karthikeyansk94@outlook.com"
+        >
+          karthikeyansk94@outlook.com ↗
+        </a>
+
+
+        <a
+          class="phone-link"
+          href="tel:+918668062189"
+        >
+          +91 86680 62189
+        </a>
+
+
+        <a
+          class="phone-link"
+          href="tel:+919489324859"
+        >
+          +91 94893 24859
+        </a>
+
+
+        <div class="contact-socials">
+
+          <a
+            href="https://www.linkedin.com/in/karthikeyan1994/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/skarthikeyan-94"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <footer><span>© 2026 S Karthikeyan</span><span>BUILT FOR THE NEXT MOVE.</span></footer>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <span>
+      © 2026 S Karthikeyan
+    </span>
+
+    <span>
+      BUILT FOR THE NEXT MOVE.
+    </span>
+
+  </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
